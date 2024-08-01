@@ -93,6 +93,11 @@ function restartExplorer {
     Start-Process explorer
 }
 
+function ff {
+  Get-ChildItem -Directory -Recurse | Select-Object -ExpandProperty FullName | fzf
+}
+
+
 #34de4b3d-13a8-4540-b76d-b9e8d3851756 PowerToys CommandNotFound module
 
 Import-Module "C:\Program Files\PowerToys\WinUI3Apps\..\WinGetCommandNotFound.psd1"
