@@ -33,7 +33,6 @@ config.font = wezterm.font("JetBrains Mono")
 
 -- powershell 7
 config.default_prog = { "c:\\Program Files\\PowerShell\\7\\pwsh.exe", "-NoLogo" }
-config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 -- and finally, return the configuration to wezterm
 return config
