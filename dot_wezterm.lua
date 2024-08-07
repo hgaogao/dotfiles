@@ -34,5 +34,17 @@ config.font = wezterm.font("JetBrains Mono")
 -- powershell 7
 config.default_prog = { "c:\\Program Files\\PowerShell\\7\\pwsh.exe", "-NoLogo" }
 config.use_fancy_tab_bar = false
--- and finally, return the configuration to wezterm
+
+-- 设置多启动菜单
+local success, launch_menu = pcall(require, "launch_menu")
+
+if success then
+	-- 如果成功导入，使用导入的 launch_menu
+	config.launch_menu = launch_menu
+else
+	-- 如果导入失败，可以设置一个默认的 launch_menu 或者不设置
+	config.launch_menu = {
+		-- 可以在这里设置默认的 launch_menu 项
+	}
+end
 return config
