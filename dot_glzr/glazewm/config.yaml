@@ -95,6 +95,7 @@ window_rules:
       # Ignore rules for various 3rd-party apps.
       - window_process: { equals: 'PowerToys.PowerAccent' }
       - window_process: { equals: 'WeChat' }
+      - window_process: { equals: 'OpenAI Translator' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper*' }
 
