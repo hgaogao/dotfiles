@@ -1,0 +1,3 @@
+[2m2024-10-10T06:00:01.408140Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-10-10T07:30:00.108348Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No parent
+[2m2024-10-11T02:10:10.021763Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[39]: missing field `bindings` at line 278 column 5
