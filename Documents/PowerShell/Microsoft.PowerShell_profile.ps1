@@ -14,6 +14,16 @@ Set-PSReadLineKeyHandler -Key "RightArrow" -Function ForwardWord
 # 如何设置语言解决在连接ssh时候的中文乱码问题
 $env:LANG = 'en_US.UTF-8'
 
+function y {
+    $tmp = [System.IO.Path]::GetTempFileName()
+    yazi $args --cwd-file="$tmp"
+    $cwd = Get-Content -Path $tmp
+    if (-not [String]::IsNullOrEmpty($cwd) -and $cwd -ne $PWD.Path) {
+        Set-Location -LiteralPath $cwd
+    }
+    Remove-Item -Path $tmp
+}
+
 
 # vim blinking cursor
 function OnViModeChange {
