@@ -1,0 +1,21 @@
+patch:
+  "style/color_scheme": dark_temple
+  "style/horizontal": false
+  app_options:
+    WindowsTerminal.exe:
+      ascii_mode: true
+    pwsh.exe:
+      ascii_mode: true
+    PowerToys.PowerLauncher.exe:
+      ascii_mode: true
+    obsidian.exe:
+      ascii_mode: true
+      vim_mode: true # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
+    wezterm-gui.exe:
+      ascii_mode: true
+      vim_mode: true
+    chrome.exe:
+      ascii_mode: true
+    code.exe:
+      ascii_mode: true
+      vim_mode: true # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
